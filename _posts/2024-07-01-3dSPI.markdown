@@ -3,7 +3,7 @@ layout: post
 title:  "Prior-free 3D tracking of a fast-moving object at 6667 frames per second with single-pixel detectors
 "
 date:   2024-07-01 
-image: /images/3dSPITracking.jpg
+image: /images/3dSPITracking.png
 categories: research
 author: "Mi Zhou"
 authors: "Huan Zhang, Zonghao Liu, <strong>Mi Zhou</strong>, Zibang Zhang, Muku Chen, Zihan Geng"
