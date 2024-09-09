@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Adaptive super-resolution networks for single-pixel imaging at ultra-low sampling rates"
+date:   2024-05-20 
+image: /images/3dSPITracking.png
+categories: research
+author: "Mi Zhou"
+authors: "Zonghao Liu, Huan Zhang, Mi Zhou, Shuming Jiao, Xiao-Ping Zhang , and Zihan Geng"
+venue: "IEEE Access"
+website: https://doi.org/10.1109/ACCESS.2024.3402693
+---
+ We introduce a network architecture specifically tailored for SPI, which demonstrates improved performance even before integrating with SPI’s physical sampling processes. This integration, particularly focusing on the nuanced effects of sampling rates within the model’s loss function and data preprocessing, enhances image reconstruction quality and adaptability at low sampling rates, down to 1.56%. 
