@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Point spread function-inspired deformable convolutional network for holographic displays"
+date:   2024-03-18 
+image: /images/PSFCGH.png
+categories: research
+author: "Mi Zhou"
+authors: "<strong>Mi Zhou</strong>, Shuming Jiao, Praneeth Chakravarthula, Yang Yue, Ping Su, Ercan Engin Kuruoğlu, Zihan Geng"
+venue: "Advanced Fiber Laser Conference"
+website: https://doi.org/10.1117/12.3023146
+---
+we propose deformable holography (DeH) algorithm for CGH. We demonstrate that utilizing deformable convolutions enable adaptive modeling of geometric transformations.
