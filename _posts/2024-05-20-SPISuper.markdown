@@ -2,7 +2,7 @@
 layout: post
 title:  "Adaptive super-resolution networks for single-pixel imaging at ultra-low sampling rates"
 date:   2024-05-20 
-image: /images/3dSPITracking.png
+image: /images/SPISuper.png
 categories: research
 author: "Mi Zhou"
 authors: "Zonghao Liu, Huan Zhang, Mi Zhou, Shuming Jiao, Xiao-Ping Zhang , and Zihan Geng"
