@@ -5,7 +5,7 @@ date:   2024-05-20
 image: /images/SPISuper.png
 categories: research
 author: "Mi Zhou"
-authors: "Zonghao Liu, Huan Zhang, Mi Zhou, Shuming Jiao, Xiao-Ping Zhang , and Zihan Geng"
+authors: "Zonghao Liu, Huan Zhang, <strong>Mi Zhou</strong>, Shuming Jiao, Xiao-Ping Zhang , and Zihan Geng"
 venue: "IEEE Access"
 website: https://doi.org/10.1109/ACCESS.2024.3402693
 ---

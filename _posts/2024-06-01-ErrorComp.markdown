@@ -5,7 +5,7 @@ date:   2024-06-01
 image: /images/ErrorComp.png
 categories: research
 author: "Mi Zhou"
-authors: "Ganzhangqin Yuan, <strong>Mi </strong>Zhou, Yifan Peng, Muku Chen, and Zihan Geng"
+authors: "Ganzhangqin Yuan, <strong>Mi Zhou</strong>, Yifan Peng, Muku Chen, and Zihan Geng"
 venue: "Optics Letters"
 website: https://doi.org/10.1364/OL.519519
 ---
