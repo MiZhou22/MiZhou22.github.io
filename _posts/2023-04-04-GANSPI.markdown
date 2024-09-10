@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "GAN-SRSPI: super-resolution single-pixel imaging using generative adversarial networks"
+date:   2023-04-04 
+image: /images/GANSPI.png
+categories: research
+author: "Mi Zhou"
+authors: "Zonghao Liu, Huan Zhang, <strong>Mi Zhou</strong>, Aleksandr Tsoy, Shuming Jiao, Weizhi Wang, Xiao-Ping Zhang, Zihan Geng"
+venue: "Ninth Symposium on Novel Photoelectronic Detection Technology and Applications"
+website: https://doi.org/10.1117/12.2666860
+---
+This work proposes a super-resolution single-pixel imaging methodology based on generative adversarial networks (GAN-SRSPI). A low-resolution (N×N) image is reconstructed and then super-resolved to obtain a high-resolution (4N× 4N) image.
