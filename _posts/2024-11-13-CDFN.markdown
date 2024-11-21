@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Physics-aware cross-domain fusion aids learning-driven computer-generated holography"
+date:   2024-10-10 
+image: /images/CDFN.png
+categories: research
+author: "Mi Zhou"
+authors: "Ganzhangqin Yuan*, <strong>Mi Zhou*</strong>, Fei Liu, Mu Ku Chen, Kui Jiang, Yifan Peng, Zihan Geng"
+venue: "Photonics Research"
+website: https://doi.org/10.1364/PRJ.527405
+---
