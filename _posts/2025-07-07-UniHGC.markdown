@@ -5,7 +5,7 @@ date:   2025-07-07
 image: /images/UniHGC.png
 categories: research
 author: "Mi Zhou"
-authors: "<strong>Mi Zhou*</strong>, Hao Zhang, Mu Ku Chen, Zihan Geng"
+authors: "<strong>Mi Zhou</strong>, Hao Zhang, Mu Ku Chen, Zihan Geng"
 venue: "Displays"
 # website: https://doi.org/10.1364/PRJ.527405
 # code: https://github.com/MoyoungY/cross-domain-fusion-network
