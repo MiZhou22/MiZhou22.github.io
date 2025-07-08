@@ -9,4 +9,3 @@ authors: "Shilong Mu, Ho Ngai Chow, <strong>Mi Zhou</strong>, Runze Zhao, Kai Ch
 venue: "Adjunct Proceedings of the 2023 ACM International Joint Conference on Pervasive and Ubiquitous Computing & the 2023 ACM International Symposium on Wearable Computing"
 website: https://doi.org/10.1145/3594739.3612906
 ---
-The proposed system leverages a strain sensor based on laser-induced graphene (LIG), strategically positioned on the bird’s wing joints, in conjunction with a high-precision IMU deployed on the bird’s torso. Through a learning architecture, we achieve an impressive accuracy of 99.48% in identifying eight commonly observed bird flight postures.

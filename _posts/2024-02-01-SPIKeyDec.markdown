@@ -9,4 +9,3 @@ authors: "Aleksandr Tsoy, Zonghao Liu, Huan Zhang, <strong>Mi Zhou</strong>, Wen
 venue: "Optics Letters"
 website: https://doi.org/10.1364/OL.514213
 ---
-Our proposed method can complete the keypoint detection task at an ultralow sampling rate on a measured one-dimensional sequence without image reconstruction, thus protecting privacy from the data collection stage and preventing the acquisition of detailed visual information from the source.

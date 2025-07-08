@@ -9,4 +9,3 @@ authors: "Zonghao Liu, Huan Zhang, <strong>Mi Zhou</strong>, Shuming Jiao, Xiao-
 venue: "IEEE Access"
 website: https://doi.org/10.1109/ACCESS.2024.3402693
 ---
- We introduce a network architecture specifically tailored for SPI, which demonstrates improved performance even before integrating with SPI’s physical sampling processes. This integration, particularly focusing on the nuanced effects of sampling rates within the model’s loss function and data preprocessing, enhances image reconstruction quality and adaptability at low sampling rates, down to 1.56%. 

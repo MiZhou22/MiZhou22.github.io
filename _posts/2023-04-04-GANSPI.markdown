@@ -9,4 +9,3 @@ authors: "Zonghao Liu, Huan Zhang, <strong>Mi Zhou</strong>, Aleksandr Tsoy, Shu
 venue: "Ninth Symposium on Novel Photoelectronic Detection Technology and Applications"
 website: https://doi.org/10.1117/12.2666860
 ---
-This work proposes a super-resolution single-pixel imaging methodology based on generative adversarial networks (GAN-SRSPI). A low-resolution (N×N) image is reconstructed and then super-resolved to obtain a high-resolution (4N× 4N) image.

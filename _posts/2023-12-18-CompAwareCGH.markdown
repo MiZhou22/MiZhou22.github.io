@@ -10,4 +10,3 @@ venue: "Optics Express"
 website: https://doi.org/10.1364/OE.505447
 code: https://github.com/MiZhou22/JPEG-AwareSGD
 ---
-We introduce a novel approach to merge the process of hologram generation and JPEG compression with one differentiable model, enabling joint optimization via efficient first-order solvers.

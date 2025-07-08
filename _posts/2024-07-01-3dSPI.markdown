@@ -9,5 +9,3 @@ authors: "Huan Zhang, Zonghao Liu, <strong>Mi Zhou</strong>, Zibang Zhang, Muku 
 venue: "Optics Letters"
 website: https://doi.org/10.1364/OL.521176
 ---
- We propose a novel approach that enables real-time 3D tracking of a fast-moving object without any prior motion information and at a very low computational cost.
-
