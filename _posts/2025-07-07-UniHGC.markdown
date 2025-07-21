@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Implicit feature compression for efficient cloud-edge holographic display (Accepted)"
-date:   2025-07-07 
+title:  "Implicit feature compression for efficient cloud-edge holographic display"
+date:   2025-07-19 
 image: /images/UniHGC.png
 categories: research
 author: "Mi Zhou"
 authors: "<strong>Mi Zhou</strong>, Hao Zhang, Mu Ku Chen, Zihan Geng"
 venue: "Displays"
-# website: https://doi.org/10.1364/PRJ.527405
+website: https://doi.org/10.1016/j.displa.2025.103151
 # code: https://github.com/MoyoungY/cross-domain-fusion-network
 ---
