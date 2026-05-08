@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Ultra-efficient physical field computing by complex-valued network quantization"
+date:   2026-03-10 
+image: /images/ULBN.png
+categories: research
+author: "Mi Zhou"
+authors: "Zihan Geng*, Zhilin Li*, <strong>Mi Zhou*</strong>, Zijie Chen, Ganzhangqin Yuan, Jaebum Noh, Seokho Lee, Cherry Park, Hongya Geng, Xiu Li, Kui Jiang, Mu Ku Chen & Junsuk Rho"
+venue: "Nature Communications"
+website: https://www.nature.com/articles/s41467-026-70319-0
+code: https://github.com/THUIntelligentOpticsLab/ULBN
+---
