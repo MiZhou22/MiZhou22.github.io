@@ -74,6 +74,85 @@ h1 {
 
 }
 
+.page-shell {
+  width: 100%;
+  max-width: 800px;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.profile-copy,
+.section-copy,
+.paper-thumb-cell,
+.paper-copy,
+.profile-photo-cell {
+  padding: 2.5%;
+}
+
+.profile-copy {
+  width: 60%;
+  vertical-align: middle;
+}
+
+.profile-links {
+  text-align: center;
+}
+
+.profile-photo-cell {
+  width: 40%;
+  max-width: 40%;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.section-copy {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.paper-thumb-cell {
+  width: 25%;
+  min-width: 120px;
+  vertical-align: middle;
+}
+
+.paper-thumb {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.paper-copy {
+  width: 75%;
+  vertical-align: middle;
+}
+
+.footer-note,
+.footer-note-link {
+  font-size: small;
+}
+
+.footer-note {
+  text-align: center;
+}
+
 .one {
   width: 160px;
   height: 160px;

@@ -18,23 +18,23 @@
   <meta name="author" content="{{ site.name }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="stylesheet" type="text/css" href="{{ '/style.css' | relative_url }}" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:60%;vertical-align:middle">
+  <table class="page-shell">
+    <tr>
+      <td>
+        <table class="section-table">
+          <tr>
+            <td class="profile-copy">
               <h1>
-                Mi Zhou
+                {{ site.name }}
               </h1>
-              <p>For now, I am a PhD student at the Shenzhen International Graduate School, Tsinghua University, where I work on holographic display for virtual and augmented reality. My PhD advisor is Zihan Geng. Before that, I was a undergraduate student of Central South University (CSU) majoring in communication engineering.</a>
+              <p>{{ site.bio }}
               </p>
               <!-- <p> -->
                 <!-- From 2011 to 2017, I worked at <a href="https://www.intel.com">Intel</a>, as part of <a href="https://www.intelrealsense.com/">Intel RealSense</a>. I primarily designed computer vision algorithms for efficient hardware ASICs, including the Intel RealSense <a href="https://software.intel.com/en-us/articles/realsense-r200-camera">R200</a> and <a href="https://software.intel.com/en-us/realsense/d400">D400</a> RGB-D sensors. Additionally, I worked on <a href="https://github.com/IntelRealSense/librealsense">software APIs</a>, <a href="https://patents.google.com/patent/US9992474B2">active illumination systems</a>, <a href="https://patents.google.com/patent/US9304597">human-computer interaction devices</a>, and helped develop demos for trade shows, including CES 2012-2016. -->
@@ -42,40 +42,40 @@
               <!-- <p> -->
                 <!-- I have an MS in Computer Science (AI focus) from <a href="http://cs.stanford.edu">Stanford University</a>, where I was a research assistant for <a href="http://svl.stanford.edu/">Silvio Savarese</a> and a teaching assistant for <a href="http://svl.stanford.edu/">Fei-Fei Li</a> (<a href="http://vision.stanford.edu/teaching/cs131_fall1617/">CS131</a> & <a href="http://cs231n.stanford.edu/2017/">CS231N</a>). I have a BS in EECS from <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I worked in <a href="https://people.eecs.berkeley.edu/~pister/">Kris Pister's</a> lab. -->
               <!-- </p> -->
-              <p style="text-align:center">
-                <a target="_blank" href="zhoumicsu[at]qq.com"> zhoumicsu[at]qq.com</a> &nbsp;/&nbsp;
-                <a href="https://github.com/MiZhou22">GitHub</a> &nbsp;/&nbsp;
-                <a href="https://scholar.google.com/citations?user=h94WP2gAAAAJ&hl=en">Google Scholar</a>
+              <p class="profile-links">
+                <a href="{{ site.homepage.email_href }}">{{ site.homepage.email_display }}</a> &nbsp;/&nbsp;
+                <a href="{{ site.homepage.github_url }}">GitHub</a> &nbsp;/&nbsp;
+                <a href="{{ site.homepage.scholar_url }}">Google Scholar</a>
                 <!-- <a href="https://scholar.google.com/citations?user=h94WP2gAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp; -->
                 <!-- <a href="https://www.linkedin.com/in/lkeselman"> LinkedIn </a> -->
               </p>
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/me.jpg">
+            <td class="profile-photo-cell">
+              <img class="profile-photo" alt="profile photo" src="{{ site.avatar | relative_url }}">
             </td>
           </tr>
         </table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table class="section-table">
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
+            <td class="section-copy">
               <h2>Research</h2>
               <p>
-                I'm interested in computational display, imaging, VR, and AR. * indicate equal contribution.
+                {{ site.homepage.research_summary }}
               </p>
             </td>
           </tr>
         </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table class="section-table">
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            <td class="paper-thumb-cell">
+              <img class="paper-thumb" src="{{ post.image | prepend: '/tn' | relative_url }}" alt="project image" loading="lazy" />
             </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
+            <td class="paper-copy">
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
@@ -247,12 +247,12 @@
           {% endfor %}
         </table> -->
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table class="section-table">
           <tr>
-            <td style="padding:0px">
+            <td>
               <br>
-              <p style="text-align:center;font-size:small;">
-                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
+              <p class="footer-note">
+                Design and source code from <a class="footer-note-link" href="{{ site.homepage.credit_url }}">{{ site.homepage.credit_name }}'s website</a>
               </p>
             </td>
           </tr>

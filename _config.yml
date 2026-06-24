@@ -10,6 +10,16 @@ name: Mi Zhou
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: images/me.jpg
+bio: For now, I am a PhD student at the Shenzhen International Graduate School, Tsinghua University, where I work on holographic display for virtual and augmented reality. My PhD advisor is Zihan Geng. Before that, I was an undergraduate student of Central South University (CSU) majoring in communication engineering.
+
+homepage:
+  email_display: zhoumicsu[at]qq.com
+  email_href: mailto:zhoumicsu@qq.com
+  github_url: https://github.com/MiZhou22
+  scholar_url: https://scholar.google.com/citations?user=h94WP2gAAAAJ&hl=en
+  research_summary: I'm interested in computational display, imaging, VR, and AR. * indicate equal contribution.
+  credit_name: Jon Barron
+  credit_url: https://jonbarron.info
 
 #
 # Flags below are optional
