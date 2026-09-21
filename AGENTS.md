@@ -75,7 +75,7 @@ Recheck these observations before fixing them; this section is not authorization
 
 Keep the site recognizably academic, lightweight, and easy to update. Proposed improvements, not an approved implementation backlog:
 
-The current design uses a warm off-white background, muted blue accents, serif name/section headings, a sticky anchor navigation, a desktop profile/portrait grid, and year-grouped publications. First/co-first entries use images; other contributions use compact text entries. Preserve these distinctions when extending the design. Profile position, affiliation caption, and tagline live under `homepage` in `_config.yml`. Existing `website` links point to publisher landing pages and are labeled `HTML` as requested by the owner, not `Paper` or `PDF`; use labels that accurately describe link destinations.
+The current design uses a warm off-white background, muted blue accents, serif name/section headings, a sticky anchor navigation, a desktop profile/portrait grid, and year-grouped publications. First/co-first entries use images; other contributions use compact text entries. Preserve these distinctions when extending the design. Profile position, affiliation caption, and tagline live under `homepage` in `_config.yml`. Existing `website` links point to publisher landing pages and are labeled `Link` as requested by the owner, not `Paper` or `PDF`; use labels that accurately describe link destinations.
 
 - A concise research introduction and two or three featured works with readable figures and verified one-sentence summaries.
 - A full publication list grouped by year, with optional topic filtering if useful.
