@@ -29,6 +29,9 @@
         <li><a href="#demo">Watch demo ↓</a></li>
         <li><a href="#citation">BibTeX ↓</a></li>
       </ul>
+      {% if page.pdf_license_url %}
+      <p class="source-note">PDF: © The Author(s) {{ publication.date | date: '%Y' }}. Shared unchanged under <a href="{{ page.pdf_license_url }}">{{ page.pdf_license }}</a>. <a href="{{ publication.website | escape }}">Published version</a>.</p>
+      {% endif %}
       <p class="project-lead">{{ page.description }}</p>
     </header>
     {{ content }}

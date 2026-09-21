@@ -1,0 +1,5 @@
+# Preserve published documents and media byte-for-byte.
+*.pdf binary
+*.mp4 binary
+*.png binary
+*.jpg binary

@@ -125,6 +125,7 @@ h2 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(25px, 3vw,
 .project-resources a { display: block; background: var(--accent); border-radius: 4px; color: white; padding: 9px 17px; font-size: 13px; }
 .project-resources a:hover { background: #23475f; text-decoration: none; }
 .project-lead { max-width: 730px; margin: auto; font-size: 19px; line-height: 1.65; color: #405e72; }
+.project-hero > .source-note { margin-bottom: 24px; }
 .project-demo video { display: block; width: 100%; aspect-ratio: 4080 / 2474; background: #0b1015; border-radius: 7px; }
 .media-caption, .project-figure figcaption, .result-videos figcaption { margin-top: 12px; font-size: 12px; line-height: 1.7; color: var(--muted); }
 .project-section { display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: 50px; padding: 64px 0 32px; }
