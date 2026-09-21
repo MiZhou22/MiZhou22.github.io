@@ -13,6 +13,7 @@ avatar: images/me.jpg
 bio: For now, I am a PhD student at the Shenzhen International Graduate School, Tsinghua University, where I work on holographic display for virtual and augmented reality. My PhD advisor is Zihan Geng. Before that, I was an undergraduate student of Central South University (CSU) majoring in communication engineering.
 
 homepage:
+  show_project_links: false # Enable once all planned project pages are ready.
   position: PhD Student · Tsinghua University
   affiliation: Shenzhen International Graduate School
   tagline: Exploring AI, optics, and visual signal processing.

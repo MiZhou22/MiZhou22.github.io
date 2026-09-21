@@ -16,7 +16,7 @@ The website design is just a modification of [Jon Barron's website](https://jonb
 ## Research project pages
 
 - `projects/natural-defocus/index.html` is the first project page; `_layouts/project.html` supplies reusable publication metadata, navigation, and resource links.
-- Set the corresponding post's `project` field to the page's `permalink`. The homepage then adds a **Project Page** button. Keep the existing `website` field for the publisher link.
+- Set the corresponding post's `project` field to the page's `permalink`. The homepage adds a **Project Page** button only when `homepage.show_project_links` is enabled. This switch is currently off until all planned project pages are complete. Keep the existing `website` field for the publisher link.
 - Publication metadata is read from the matching post, not duplicated in the project layout. Page-specific description and full-text link live in project front matter.
 - Store public, selected media under `assets/projects/<slug>/`. Keep raw datasets, checkpoints, editorial project files, and temporary exports outside the published site.
 - Keep simulations, references, and optical captures explicitly labeled. Videos use native controls and no autoplay; citation text remains available without JavaScript.

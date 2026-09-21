@@ -87,3 +87,5 @@ The current design uses a warm off-white background, muted blue accents, serif n
 Project pages: match the post `project` field to the project page `permalink`; this enables the homepage button and supplies the project header metadata. Reuse the project layout, preserve PDF bytes, label reference/simulation/experiment media explicitly, and retain source provenance in README. Never publish raw research folders wholesale.
 
 The owner currently prefers not to host the Natural Defocus PDF. Keep publisher/full-text links; do not restore the PDF download or upload the file unless requested. The local PDF may be consulted as a source.
+
+Homepage project buttons are intentionally hidden via `homepage.show_project_links: false` until all planned project pages are complete. Keep existing project URLs and metadata intact; enable the shared switch when the pages are ready for their coordinated launch.
