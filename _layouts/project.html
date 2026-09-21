@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body class="project-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="site-nav page-width" aria-label="Project navigation">
+      <a class="site-name" href="{{ '/' | relative_url }}">{{ site.name }}</a>
+      <div class="nav-links">
+        <a href="#demo">Demo</a>
+        <a href="#overview">Overview</a>
+        <a href="#results">Results</a>
+        <a href="#citation">Citation</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main" class="page-width project-main">
+    {% assign publication = site.posts | where: 'project', page.permalink | first %}
+    <header class="project-hero">
+      <p class="eyebrow">{{ publication.venue }} · {{ publication.date | date: '%Y' }}</p>
+      <h1>{{ publication.title }}</h1>
+      <p class="project-authors">{{ publication.authors }}</p>
+      <p class="project-author-note">* Equal contribution.</p>
+      <ul class="project-resources" aria-label="Publication resources">
+        <li><a href="{{ publication.website | escape }}">Link ↗</a></li>
+        {% if page.pdf %}<li><a href="{{ page.pdf | relative_url }}">PDF ↓</a></li>{% endif %}
+        <li><a href="{{ publication.code | escape }}">Code ↗</a></li>
+        <li><a href="{{ page.full_text_url | escape }}">Full text ↗</a></li>
+        <li><a href="#demo">Watch demo ↓</a></li>
+        <li><a href="#citation">BibTeX ↓</a></li>
+      </ul>
+      <p class="project-lead">{{ page.description }}</p>
+    </header>
+    {{ content }}
+  </main>
+  <footer class="site-footer page-width">
+    <p><a href="{{ '/' | relative_url }}">← Back to all publications</a></p>
+    <p>{{ site.name }} · Design adapted from <a href="{{ site.homepage.credit_url }}">{{ site.homepage.credit_name }}'s website</a>.</p>
+  </footer>
+  <script src="{{ '/assets/project.js' | relative_url }}" defer></script>
+</body>
+</html>

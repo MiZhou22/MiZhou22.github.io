@@ -5,6 +5,7 @@ date: 2026-05-06
 image: /images/NaturalDefocusEffect.png
 categories: research
 author_role: first_or_cofirst
+project: /projects/natural-defocus/
 author: "Mi Zhou"
 authors: "<strong>Mi Zhou*</strong>, Mu Ku Chen, Fei Liu, Mei Shen, Lei Lei, Chaoqun Ma, Xueqian Wang, Jian Song, Haoqian Wang, Kaichen Dong, Chao Zuo & Zihan Geng*"
 venue: "Nature Communications"

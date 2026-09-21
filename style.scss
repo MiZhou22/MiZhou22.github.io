@@ -112,3 +112,55 @@ h2 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(25px, 3vw,
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* Project pages share the homepage palette, with a wider media-first layout. */
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.paper-links .project-page-link { background: var(--accent); border-color: var(--accent); color: white; }
+.project-hero { padding: 70px 0 36px; text-align: center; }
+.project-hero h1 { max-width: 920px; margin: 18px auto 24px; font-size: clamp(34px, 4.5vw, 54px); line-height: 1.14; letter-spacing: -.035em; }
+.project-authors { max-width: 850px; margin: auto; font-size: 15px; line-height: 1.9; color: var(--muted); }
+.project-authors strong { color: var(--ink); }
+.project-author-note { font-size: 11px; color: var(--muted); margin-top: 8px; }
+.project-resources { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin: 26px 0; }
+.project-resources a { display: block; background: var(--accent); border-radius: 4px; color: white; padding: 9px 17px; font-size: 13px; }
+.project-resources a:hover { background: #23475f; text-decoration: none; }
+.project-lead { max-width: 730px; margin: auto; font-size: 19px; line-height: 1.65; color: #405e72; }
+.project-demo video { display: block; width: 100%; aspect-ratio: 4080 / 2474; background: #0b1015; border-radius: 7px; }
+.media-caption, .project-figure figcaption, .result-videos figcaption { margin-top: 12px; font-size: 12px; line-height: 1.7; color: var(--muted); }
+.project-section { display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: 50px; padding: 64px 0 32px; }
+.project-section-label h2 { margin-top: 14px; }
+.project-prose p + p { margin-top: 16px; }
+.project-prose { font-size: 15px; color: var(--muted); }
+.source-note { font-size: 12px; color: var(--muted); }
+.project-figure { padding: 20px; background: white; border: 1px solid var(--rule); border-radius: 5px; }
+.overview-figure { max-width: 810px; margin: 18px auto 0; }
+.project-figure img { width: 100%; height: auto; }
+.method-steps { list-style: decimal-leading-zero; margin: 0; padding-left: 26px; }
+.method-steps li { padding: 0 0 22px 10px; }
+.method-steps li::marker { color: var(--accent); font-size: 13px; }
+.method-steps h3 { font-size: 16px; }
+.method-steps p { font-size: 14px; margin-top: 5px; color: var(--muted); }
+.project-results { padding-top: 30px; }
+.project-results-intro { max-width: 760px; margin: 22px 0; color: var(--muted); font-size: 14px; }
+.result-videos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.result-videos h3 { font-size: 14px; margin-bottom: 10px; }
+.result-videos video { display: block; width: 100%; aspect-ratio: 1; object-fit: contain; background: #0b1015; border-radius: 4px; }
+.setup-figure { margin-top: 36px; }
+.project-citation { padding-top: 64px; }
+.project-citation pre { padding: 24px; overflow-x: auto; background: #edf1f3; border-radius: 5px; font-size: 12px; line-height: 1.8; white-space: pre-wrap; overflow-wrap: anywhere; }
+.project-citation button { padding: 8px 14px; background: var(--paper); color: var(--accent); border: 1px solid var(--accent); border-radius: 4px; cursor: pointer; font: inherit; font-size: 12px; white-space: nowrap; }
+.project-citation button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.copy-status { font-size: 12px; color: var(--accent); }
+@media (max-width: 700px) {
+  .project-hero { padding-top: 40px; }
+  .project-hero h1 { font-size: 35px; }
+  .project-authors { font-size: 13px; }
+  .project-lead { font-size: 17px; }
+  .project-resources { gap: 8px; }
+  .project-resources a { padding: 8px 12px; font-size: 12px; }
+  .project-section { grid-template-columns: 1fr; gap: 22px; padding-top: 42px; }
+  .result-videos { grid-template-columns: 1fr; gap: 24px; }
+  .result-videos video { max-width: 420px; }
+  .project-figure { padding: 10px; }
+  .project-citation { padding-top: 42px; }
+}

@@ -13,7 +13,8 @@ This is Mi Zhou's academic homepage, adapted from Jekyll Now and Jon Barron's we
 
 - `_config.yml`: name, biography, profile links, research summary, site URL, Jekyll settings, and build exclusions.
 - `_layouts/default.html`: complete homepage, including profile, research listing, analytics, and attribution.
-- `_layouts/post.html`: delegates to the default layout.
+- `index.html`: explicit homepage entry point. `_layouts/post.html`: redirects publication URLs to the project page when present, otherwise the homepage.
+- `_layouts/project.html`, `projects/<slug>/index.html`, and `assets/projects/<slug>/`: reusable project layout, project content, and selected public media. `_includes/head.html` is shared metadata and analytics.
 - `_includes/publication-group.html` and `publication-row.html`: shared year headings and publication rows for the two author-role sections.
 - `_posts/YYYY-MM-DD-Slug.markdown`: publication metadata and optional summary text. The homepage renders posts in the `research` category from `site.posts`.
 - `style.scss`: active site styles; preserve its opening YAML front matter so Jekyll compiles it. `_sass/` holds legacy partials whose imports are currently commented out.
@@ -57,10 +58,10 @@ This is Mi Zhou's academic homepage, adapted from Jekyll Now and Jon Barron's we
 
 Recheck these observations before fixing them; this section is not authorization for unrelated cleanup.
 
-- There is no tracked root `index.html`. `_config.yml` sets `permalink: /` for posts, and each post renders the homepage through the layouts. Multiple posts therefore target the same root output; README acknowledges duplicate sitemap entries. Any routing improvement needs an explicit homepage entry point and verification that publication listing and sitemap generation still work.
+- Routing was corrected when project pages were added: root `index.html` owns `/`; posts use `/publications/:title/` redirects with `sitemap: false`. Do not restore the shared `permalink: /` for posts. Verify the homepage, project page, redirects, and sitemap after routing changes.
 - `CNAME` contains `leonidk.com`, whereas `url` names `https://MiZhou22.github.io`; `CNAME` is also in Jekyll's exclusions. Do not assume that inherited domain belongs to the owner or that excluding it establishes the host's domain settings. Verify the intended domain and hosting settings during deployment work.
 - `_make_favicon.sh` references `images/circle_bw_crop.jpg`, which is absent. `favicon.ico` is ignored. Verify the source image and tracked output before changing favicon generation.
-- `_layouts/default.html` includes a hard-coded Google Analytics ID. Verify ownership before modifying analytics. The inherited commented biography/project sections have been removed.
+- `_includes/head.html` includes a hard-coded Google Analytics ID. Verify ownership before modifying analytics. The inherited commented biography/project sections have been removed.
 - Some publication filenames and front-matter dates differ. Determine the correct date from evidence, not filename alone.
 
 ## Git and publishing
@@ -82,3 +83,5 @@ The current design uses a warm off-white background, muted blue accents, serif n
 - Short news updates and a CV link only when the owner supplies current content.
 - More deliberate typography, spacing, consistent link styling, and a stacked mobile layout.
 - Research demonstrations using real project media where available; preserve scientific fidelity and avoid decorative effects that obstruct reading.
+
+Project pages: match the post `project` field to the project page `permalink`; this enables the homepage button and supplies the project header metadata. Reuse the project layout, preserve PDF bytes, label reference/simulation/experiment media explicitly, and retain source provenance in README. Never publish raw research folders wholesale.

@@ -1,3 +1,12 @@
----
-layout: default
----
+{% assign destination = page.project | default: '/' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title | escape }}</title>
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url={{ destination | relative_url }}">
+  <link rel="canonical" href="{{ destination | absolute_url }}">
+</head>
+<body><p><a href="{{ destination | relative_url }}">Continue to {{ page.title | escape }}</a></p></body>
+</html>

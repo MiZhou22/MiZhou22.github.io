@@ -1,0 +1,69 @@
+---
+layout: project
+title: Photorealistic 3D Holographic Display with Natural Defocus Effect
+permalink: /projects/natural-defocus/
+description: Bringing natural focus and defocus to holographic displays through neural rendering and physically constrained wavefront generation.
+full_text_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13357810/
+pdf: /assets/projects/natural-defocus/paper.pdf
+---
+<section id="demo" class="project-demo" aria-labelledby="demo-heading">
+  <h2 id="demo-heading" class="visually-hidden">Video demonstration</h2>
+  <video controls playsinline preload="none" poster="{{ '/assets/projects/natural-defocus/demo-poster.jpg' | relative_url }}" aria-label="Natural Defocus comparison demonstration">
+    <source src="{{ '/assets/projects/natural-defocus/demo.mp4' | relative_url }}" type="video/mp4">
+    <a href="{{ '/assets/projects/natural-defocus/demo.mp4' | relative_url }}">Download the demonstration video</a>.
+  </video>
+  <p class="media-caption">Reference comparisons and optical reconstruction sequences as focus changes across the scene. Silent video.</p>
+</section>
+
+<section id="overview" class="project-section" aria-labelledby="overview-heading">
+  <div class="project-section-label"><p class="eyebrow">01 / The idea</p><h2 id="overview-heading">Natural blur.<br>Consistent depth.</h2></div>
+  <div class="project-prose">
+    <p>Sharp objects are only part of a convincing 3D image. Out-of-focus regions also need to behave naturally. Conventional coherent holographic models can introduce ringing and incorrect depth cues, especially around transparent or reflective surfaces.</p>
+    <p>Our framework combines layered RGB-D scene information, neural rendering, and phase prediction with explicit wave-optical propagation. It preserves multiple depth contributions and generates a physically consistent wavefront for phase-only holographic display.</p>
+    <p class="source-note">Based on the <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13357810/">published paper</a>.</p>
+  </div>
+</section>
+
+<figure class="project-figure overview-figure">
+  <img src="{{ '/images/NaturalDefocusEffect.png' | relative_url }}" alt="Overview of holographic depth planes, natural versus ringing defocus, and transparent and reflective scene representations" loading="lazy">
+  <figcaption>Project overview: defocus behavior, visual perception, and layered scene representation.</figcaption>
+</figure>
+
+<section class="project-section" aria-labelledby="method-heading">
+  <div class="project-section-label"><p class="eyebrow">02 / The method</p><h2 id="method-heading">Rendering meets<br>wave optics.</h2></div>
+  <ol class="method-steps">
+    <li><h3>Represent the scene</h3><p>Layered RGB-D retains depth information behind transparent surfaces and within reflections.</p></li>
+    <li><h3>Infer the wavefront</h3><p>Neural rendering supplies amplitude information; phase prediction completes the complex field.</p></li>
+    <li><h3>Enforce propagation</h3><p>Explicit diffraction and phase-only encoding connect the inferred field to the display.</p></li>
+  </ol>
+</section>
+
+<section id="results" class="project-results" aria-labelledby="results-heading">
+  <div class="section-heading"><h2 id="results-heading">From simulation to experiment</h2></div>
+  <p class="project-results-intro">The same Couch scene is shown as a reference focal sweep, a numerical reconstruction, and an optical capture. Each clip can be played independently.</p>
+  <div class="result-videos">
+    <figure><h3>Reference</h3><video controls playsinline preload="none" poster="{{ '/assets/projects/natural-defocus/couch-reference.jpg' | relative_url }}" aria-label="Couch reference focal sweep"><source src="{{ '/assets/projects/natural-defocus/couch_gt.mp4' | relative_url }}" type="video/mp4"></video><figcaption>Target focal stack</figcaption></figure>
+    <figure><h3>Simulation</h3><video controls playsinline preload="none" poster="{{ '/assets/projects/natural-defocus/couch-simulation.jpg' | relative_url }}" aria-label="Couch numerical reconstruction"><source src="{{ '/assets/projects/natural-defocus/couch_sim.mp4' | relative_url }}" type="video/mp4"></video><figcaption>Numerical reconstruction</figcaption></figure>
+    <figure><h3>Experiment</h3><video controls playsinline preload="none" poster="{{ '/assets/projects/natural-defocus/couch-poster.jpg' | relative_url }}" aria-label="Couch optical reconstruction"><source src="{{ '/assets/projects/natural-defocus/couch_exp.mp4' | relative_url }}" type="video/mp4"></video><figcaption>Camera-captured reconstruction</figcaption></figure>
+  </div>
+  <figure class="project-figure setup-figure">
+    <img src="{{ '/assets/projects/natural-defocus/setup.jpg' | relative_url }}" alt="Annotated optical setup showing the single-mode fiber, polarizer, lenses, spatial light modulator, spatial filter, and camera" loading="lazy">
+    <figcaption>The benchtop holographic display and camera-side view.</figcaption>
+  </figure>
+</section>
+
+<section id="citation" class="project-citation" aria-labelledby="citation-heading">
+  <div class="section-heading"><h2 id="citation-heading">Citation</h2><button type="button" id="copy-citation" hidden>Copy BibTeX</button></div>
+  <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
+  <pre><code id="bibtex">@article{zhou2026naturaldefocus,
+  title = {Photorealistic 3D Holographic Display with Natural Defocus Effect},
+  author = {Zhou, Mi and Chen, Mu Ku and Liu, Fei and Shen, Mei and Lei, Lei and Ma, Chaoqun and Wang, Xueqian and Song, Jian and Wang, Haoqian and Dong, Kaichen and Zuo, Chao and Geng, Zihan},
+  journal = {Nature Communications},
+  volume = {17},
+  pages = {6117},
+  year = {2026},
+  doi = {10.1038/s41467-026-72736-7},
+  url = {https://doi.org/10.1038/s41467-026-72736-7}
+}</code></pre>
+  <p class="source-note">Publication details: <a href="https://doi.org/10.1038/s41467-026-72736-7">Nature Communications 17, 6117 (2026)</a>. Demonstration media supplied by the authors. Couch scene attribution is documented in the paper.</p>
+</section>

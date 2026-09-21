@@ -11,6 +11,9 @@
     <div class="paper-venue"><em>{{ paper.venue }}</em>, {{ paper.date | date: '%Y' }}</div>
     {% assign link_types = 'arxiv,video,code,poster,slides,website,youtube' | split: ',' %}
     {% capture paper_links %}
+      {% if paper.project %}
+      <li><a class="project-page-link" href="{{ paper.project | relative_url }}">Project Page</a></li>
+      {% endif %}
       {% for link_type in link_types %}
         {% assign link_url = paper[link_type] %}
         {% if link_url and link_url != '' %}
