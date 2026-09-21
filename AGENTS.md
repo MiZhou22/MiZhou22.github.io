@@ -85,3 +85,5 @@ The current design uses a warm off-white background, muted blue accents, serif n
 - Research demonstrations using real project media where available; preserve scientific fidelity and avoid decorative effects that obstruct reading.
 
 Project pages: match the post `project` field to the project page `permalink`; this enables the homepage button and supplies the project header metadata. Reuse the project layout, preserve PDF bytes, label reference/simulation/experiment media explicitly, and retain source provenance in README. Never publish raw research folders wholesale.
+
+The owner currently prefers not to host the Natural Defocus PDF. Keep publisher/full-text links; do not restore the PDF download or upload the file unless requested. The local PDF may be consulted as a source.
