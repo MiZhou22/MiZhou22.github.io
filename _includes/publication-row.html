@@ -18,7 +18,7 @@
         {% if first_character == '/' %}
         {% assign link_url = link_url | relative_url %}
         {% endif %}
-        <li><a href="{{ link_url | escape }}">{% if link_type == 'arxiv' %}arXiv{% elsif link_type == 'website' %}Publisher{% elsif link_type == 'youtube' %}YouTube{% else %}{{ link_type | capitalize }}{% endif %}</a></li>
+        <li><a href="{{ link_url | escape }}">{% if link_type == 'arxiv' %}arXiv{% elsif link_type == 'website' %}HTML{% elsif link_type == 'youtube' %}YouTube{% else %}{{ link_type | capitalize }}{% endif %}</a></li>
         {% endif %}
       {% endfor %}
     {% endcapture %}
