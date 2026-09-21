@@ -37,7 +37,7 @@ This is Mi Zhou's academic homepage, adapted from Jekyll Now and Jon Barron's we
 1. Follow an existing research post. Required project fields are `layout: post`, `title`, `date`, `image`, `categories: research`, `authors`, and `venue`. The legacy singular `author` field does not replace the displayed `authors` field.
 2. Quote YAML strings containing colons or HTML. Preserve `<strong>` author highlighting as appropriate. Use the verified publication date; investigate filename/front-matter date differences before changing them.
 3. The active template supports optional `arxiv`, `video`, `code`, `poster`, `slides`, `website`, and `youtube` links. A `paper` field is not currently rendered in the research section; use a supported field or deliberately extend the template.
-4. Set `image: /images/Filename.png` and supply both the original and `tn/images/Filename.png`. The template prepends `/tn` to the image path. Preserve scientific image proportions and legibility.
+4. Set `image: /images/Filename.png` and supply the original and `tn/images/Filename.png`. The illustrated first/co-first section uses originals for clarity at larger display sizes; the compact co-authored section omits images. Preserve scientific image proportions and legibility, and optimize oversized originals before adding them.
 5. The thumbnail script creates only missing thumbnails and does not refresh existing ones. Ensure destination folders exist, and explicitly regenerate the relevant thumbnail after replacing an original. Do not run bulk image conversion unnecessarily.
 6. Put optional plain-language summary text after the closing front-matter delimiter; the homepage displays `post.excerpt`. Do not fabricate results or quantitative claims.
 7. Set `author_role: first_or_cofirst` for first/co-first author papers, or `author_role: coauthor` for other author positions. Both sections sort by front-matter date descending and show year headings. Do not infer roles from asterisks at render time. The owner confirmed CDFN and ULBN as co-first author papers; there are currently no corresponding-author papers. Check that every research post has one valid role so no papers are omitted.
@@ -60,7 +60,7 @@ Recheck these observations before fixing them; this section is not authorization
 - There is no tracked root `index.html`. `_config.yml` sets `permalink: /` for posts, and each post renders the homepage through the layouts. Multiple posts therefore target the same root output; README acknowledges duplicate sitemap entries. Any routing improvement needs an explicit homepage entry point and verification that publication listing and sitemap generation still work.
 - `CNAME` contains `leonidk.com`, whereas `url` names `https://MiZhou22.github.io`; `CNAME` is also in Jekyll's exclusions. Do not assume that inherited domain belongs to the owner or that excluding it establishes the host's domain settings. Verify the intended domain and hosting settings during deployment work.
 - `_make_favicon.sh` references `images/circle_bw_crop.jpg`, which is absent. `favicon.ico` is ignored. Verify the source image and tracked output before changing favicon generation.
-- `_layouts/default.html` includes a hard-coded Google Analytics ID and commented biography/project sections inherited from the template. Verify ownership before modifying analytics; do not present commented template content as Mi Zhou's history.
+- `_layouts/default.html` includes a hard-coded Google Analytics ID. Verify ownership before modifying analytics. The inherited commented biography/project sections have been removed.
 - Some publication filenames and front-matter dates differ. Determine the correct date from evidence, not filename alone.
 
 ## Git and publishing
@@ -74,6 +74,8 @@ Recheck these observations before fixing them; this section is not authorization
 ## Design direction for future requested work
 
 Keep the site recognizably academic, lightweight, and easy to update. Proposed improvements, not an approved implementation backlog:
+
+The current design uses a warm off-white background, muted blue accents, serif name/section headings, a sticky anchor navigation, a desktop profile/portrait grid, and year-grouped publications. First/co-first entries use images; other contributions use compact text entries. Preserve these distinctions when extending the design. Profile position, affiliation caption, and tagline live under `homepage` in `_config.yml`. Existing `website` links point to publisher landing pages and are labeled `Publisher`, not `Paper` or `PDF`; use labels that accurately describe link destinations.
 
 - A concise research introduction and two or three featured works with readable figures and verified one-sentence summaries.
 - A full publication list grouped by year, with optional topic filtering if useful.

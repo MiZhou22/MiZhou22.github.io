@@ -1,4 +1,5 @@
 _site
+_temp/
 .DS_Store
 .jekyll
 .jekyll-metadata

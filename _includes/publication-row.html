@@ -1,10 +1,12 @@
 {% assign paper = include.post %}
-<tr class="publication-row">
-  <td class="paper-thumb-cell">
-    <img class="paper-thumb" src="{{ paper.image | prepend: '/tn' | relative_url }}" alt="{{ paper.title | escape }} — research overview" loading="lazy" />
-  </td>
-  <td class="paper-copy">
-    <h4 class="paper-title">{{ paper.title }}</h4>
+<article class="publication-row{% if include.compact %} publication-row-compact{% endif %}">
+  {% unless include.compact %}
+  <div class="paper-thumb-cell">
+    <img class="paper-thumb" src="{{ paper.image | relative_url }}" alt="{{ paper.title | escape }} — research overview" loading="lazy" />
+  </div>
+  {% endunless %}
+  <div class="paper-copy">
+    <h4 class="paper-title">{% if paper.website %}<a href="{{ paper.website | escape }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</h4>
     <div class="paper-authors">{{ paper.authors }}</div>
     <div class="paper-venue"><em>{{ paper.venue }}</em>, {{ paper.date | date: '%Y' }}</div>
     {% assign link_types = 'arxiv,video,code,poster,slides,website,youtube' | split: ',' %}
@@ -16,7 +18,7 @@
         {% if first_character == '/' %}
         {% assign link_url = link_url | relative_url %}
         {% endif %}
-        <li><a href="{{ link_url | escape }}">{{ link_type }}</a></li>
+        <li><a href="{{ link_url | escape }}">{% if link_type == 'arxiv' %}arXiv{% elsif link_type == 'website' %}Publisher{% elsif link_type == 'youtube' %}YouTube{% else %}{{ link_type | capitalize }}{% endif %}</a></li>
         {% endif %}
       {% endfor %}
     {% endcapture %}
@@ -25,5 +27,5 @@
     <ul class="paper-links" aria-label="Resources for {{ paper.title | escape }}">{{ paper_links }}</ul>
     {% endif %}
     {{ paper.excerpt }}
-  </td>
-</tr>
+  </div>
+</article>
