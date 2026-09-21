@@ -4,6 +4,7 @@ title:  "GAN-SRSPI: super-resolution single-pixel imaging using generative adver
 date:   2023-04-04 
 image: /images/GANSPI.png
 categories: research
+author_role: coauthor
 author: "Mi Zhou"
 authors: "Zonghao Liu, Huan Zhang, <strong>Mi Zhou</strong>, Aleksandr Tsoy, Shuming Jiao, Weizhi Wang, Xiao-Ping Zhang, Zihan Geng"
 venue: "Ninth Symposium on Novel Photoelectronic Detection Technology and Applications"

@@ -4,6 +4,7 @@ title:  "Ultra-efficient physical field computing by complex-valued network quan
 date:   2026-03-10 
 image: /images/ULBN.png
 categories: research
+author_role: first_or_cofirst
 author: "Mi Zhou"
 authors: "Zihan Geng*, Zhilin Li*, <strong>Mi Zhou*</strong>, Zijie Chen, Ganzhangqin Yuan, Jaebum Noh, Seokho Lee, Cherry Park, Hongya Geng, Xiu Li, Kui Jiang, Mu Ku Chen & Junsuk Rho"
 venue: "Nature Communications"

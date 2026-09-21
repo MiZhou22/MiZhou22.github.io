@@ -4,6 +4,7 @@ title:  "Speckle-free holography with a diffraction-aware global perceptual mode
 date:   2024-10-10 
 image: /images/SwinUNetHolo.png
 categories: research
+author_role: coauthor
 author: "Mi Zhou"
 authors: "Yiran Wei, Yiyun Chen, <strong>Mi Zhou</strong>, Mu Ku Chen, Shuming Jiao, Qinghua Song, Xiao-Ping Zhang, Zihan Geng"
 venue: "Photonics Research"

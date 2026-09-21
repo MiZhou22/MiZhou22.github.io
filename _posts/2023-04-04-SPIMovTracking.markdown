@@ -4,6 +4,7 @@ title:  "Ultra-efficient single-pixel tracking and imaging of moving objects bas
 date:   2023-04-04 
 image: /images/SPIMovTracking.png
 categories: research
+author_role: coauthor
 author: "Mi Zhou"
 authors: "Huan Zhang, Zonghao Liu, <strong>Mi Zhou</strong>, Aleksandr Tsoy, Weizhi Wang, Xiao-Ping Zhang, Zihan Geng"
 venue: "Ninth Symposium on Novel Photoelectronic Detection Technology and Applications"

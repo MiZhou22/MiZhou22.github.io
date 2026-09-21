@@ -1,0 +1,29 @@
+{% assign paper = include.post %}
+<tr class="publication-row">
+  <td class="paper-thumb-cell">
+    <img class="paper-thumb" src="{{ paper.image | prepend: '/tn' | relative_url }}" alt="{{ paper.title | escape }} — research overview" loading="lazy" />
+  </td>
+  <td class="paper-copy">
+    <h4 class="paper-title">{{ paper.title }}</h4>
+    <div class="paper-authors">{{ paper.authors }}</div>
+    <div class="paper-venue"><em>{{ paper.venue }}</em>, {{ paper.date | date: '%Y' }}</div>
+    {% assign link_types = 'arxiv,video,code,poster,slides,website,youtube' | split: ',' %}
+    {% capture paper_links %}
+      {% for link_type in link_types %}
+        {% assign link_url = paper[link_type] %}
+        {% if link_url and link_url != '' %}
+        {% assign first_character = link_url | slice: 0 %}
+        {% if first_character == '/' %}
+        {% assign link_url = link_url | relative_url %}
+        {% endif %}
+        <li><a href="{{ link_url | escape }}">{{ link_type }}</a></li>
+        {% endif %}
+      {% endfor %}
+    {% endcapture %}
+    {% assign paper_links = paper_links | strip %}
+    {% if paper_links != '' %}
+    <ul class="paper-links" aria-label="Resources for {{ paper.title | escape }}">{{ paper_links }}</ul>
+    {% endif %}
+    {{ paper.excerpt }}
+  </td>
+</tr>

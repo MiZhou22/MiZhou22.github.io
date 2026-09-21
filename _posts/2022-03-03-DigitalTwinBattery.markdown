@@ -4,6 +4,7 @@ title:  "A digital twin model for battery management systems: concepts, algorith
 date:   2022-03-03
 image: /images/DigitalTwinBattery.png
 categories: research
+author_role: first_or_cofirst
 author: "Mi Zhou"
 authors: "<strong>Mi Zhou*</strong>, Lu Bai*, Jiaxuan Lei*, Yibin Wang, Heng Li"
 venue: "The International Conference on Image, Vision and Intelligent Systems"

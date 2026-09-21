@@ -4,6 +4,7 @@ title:  "Image-free single-pixel keypoint detection for privacy preserving human
 date:   2024-02-01 
 image: /images/SPIKeyDec.png
 categories: research
+author_role: coauthor
 author: "Mi Zhou"
 authors: "Aleksandr Tsoy, Zonghao Liu, Huan Zhang, <strong>Mi Zhou</strong>, Wenming Yang, Hongya Geng, Kui Jiang, Xin Yuan, Zihan Geng"
 venue: "Optics Letters"

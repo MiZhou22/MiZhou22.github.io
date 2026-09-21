@@ -4,6 +4,7 @@ title:  "Error-compensation network for ringing artifact reduction in holographi
 date:   2024-06-01 
 image: /images/ErrorComp.png
 categories: research
+author_role: coauthor
 author: "Mi Zhou"
 authors: "Ganzhangqin Yuan, <strong>Mi Zhou</strong>, Yifan Peng, Muku Chen, and Zihan Geng"
 venue: "Optics Letters"

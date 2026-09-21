@@ -1,0 +1,18 @@
+{% if include.posts.size > 0 %}
+<section class="publication-group" aria-labelledby="{{ include.id }}">
+  <h2 id="{{ include.id }}">{{ include.title }}</h2>
+  <table class="section-table publication-table" role="presentation">
+    {% assign previous_year = '' %}
+    {% for post in include.posts %}
+    {% assign publication_year = post.date | date: '%Y' %}
+    {% if publication_year != previous_year %}
+    <tr>
+      <td class="publication-year" colspan="2"><h3>{{ publication_year }}</h3></td>
+    </tr>
+    {% assign previous_year = publication_year %}
+    {% endif %}
+    {% include publication-row.html post=post %}
+    {% endfor %}
+  </table>
+</section>
+{% endif %}

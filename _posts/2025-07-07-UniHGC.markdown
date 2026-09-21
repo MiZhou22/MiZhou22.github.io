@@ -4,6 +4,7 @@ title:  "Implicit feature compression for efficient cloud-edge holographic displ
 date:   2025-07-19 
 image: /images/UniHGC.png
 categories: research
+author_role: first_or_cofirst
 author: "Mi Zhou"
 authors: "<strong>Mi Zhou</strong>, Hao Zhang, Mu Ku Chen, Zihan Geng"
 venue: "Displays"

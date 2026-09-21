@@ -4,6 +4,7 @@ title:  "End-to-end compression-aware computer-generated holography"
 date:   2023-12-18 
 image: /images/CompAwareCGH.png
 categories: research
+author_role: first_or_cofirst
 author: "Mi Zhou"
 authors: "<strong>Mi Zhou</strong>, Hao Zhang, Shuming Jiao, Praneeth Chakravarthula, Zihan Geng"
 venue: "Optics Express"

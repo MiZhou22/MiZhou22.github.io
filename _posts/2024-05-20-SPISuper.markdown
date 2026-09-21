@@ -4,6 +4,7 @@ title:  "Adaptive super-resolution networks for single-pixel imaging at ultra-lo
 date:   2024-05-20 
 image: /images/SPISuper.png
 categories: research
+author_role: coauthor
 author: "Mi Zhou"
 authors: "Zonghao Liu, Huan Zhang, <strong>Mi Zhou</strong>, Shuming Jiao, Xiao-Ping Zhang , and Zihan Geng"
 venue: "IEEE Access"
