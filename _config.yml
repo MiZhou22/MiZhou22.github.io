@@ -20,6 +20,7 @@ homepage:
   email_display: zhoumicsu[at]qq.com
   email_href: mailto:zhoumicsu@qq.com
   github_url: https://github.com/MiZhou22
+  cv_path: /pdfs/Mi-Zhou-CV.pdf # Public CV linked beside the GitHub profile.
   scholar_url: https://scholar.google.com/citations?user=h94WP2gAAAAJ&hl=en
   research_summary: I'm interested in computational display, imaging, computer vision, and AI. * indicate equal contribution.
   credit_name: Jon Barron
